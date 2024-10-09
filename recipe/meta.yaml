@@ -1,5 +1,5 @@
 {% set name = "coded-flows" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/coded_flows-{{ version }}.tar.gz
-  sha256: f51890db26e3cfbc25858e8982317f56b2c231ee2b73ff98e38f04d007672a04
+  sha256: 5abe8b97a9e14cd55ea42ed05c0ebe77e17f851b7687a2529f4bbaa0c8958109
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.9.0,<4.0.0
     - pandas >=2.1.0,<3.0.0
-    - pyarrow >=14.0.2,<15.0.0
+    - pyarrow >=16.0.0,<17.0.0
     - pydantic >=2.6.4,<3.0.0
     - email-validator >=2.0.0,<3.0.0
     - pycountry >=22.3.5,<23.0.0
