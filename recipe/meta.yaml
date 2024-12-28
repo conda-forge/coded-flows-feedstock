@@ -1,5 +1,5 @@
 {% set name = "coded-flows" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/coded_flows-{{ version }}.tar.gz
-  sha256: 143a98462b5bd255a460054863af0858900a568abe0db11c809eedafbfb0899d
+  sha256: a30c72b2fffc9e00eb0d33e7540ea2e0d48d73d5e8677b052f5ce687edbd84bf
 
 build:
   noarch: python
