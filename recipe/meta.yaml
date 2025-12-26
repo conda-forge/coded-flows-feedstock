@@ -1,5 +1,5 @@
 {% set name = "coded-flows" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/coded_flows-{{ version }}.tar.gz
-  sha256: 71ad1f0313137c32df9762288ad837e9b8229e5b6f0c97e87311ed5dee0b70e1
+  sha256: 0d531418e8ee1f98e84ee9ce4356d915bc20b5ae915005d9683f79b59a0613aa
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - pydantic >=2.6.4,<3.0.0
     - email-validator >=2.0.0,<3.0.0
     - pycountry >=24.6.1,<25.0.0
-    - pillow >=10.1.0,<11.0.0
+    - pillow >=11.3.0,<12.0.0
     - pydantic-extra-types >=2.6.0,<3.0.0
     - polars >=1.0.0,<2.0.0
 
